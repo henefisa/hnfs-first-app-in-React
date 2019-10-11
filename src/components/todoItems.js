@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-
 import classNames from "classnames";
-
 import "./TodoItems.css";
-
 import check from "../svg-icon/check.svg";
 import checkDone from "../svg-icon/check-complete.svg";
+import deleteIcon from '../svg-icon/cross.svg';
 
 class TodoItems extends Component {
   render() {
-    const { item, onClick } = this.props;
+    const { item, onClick, deleteItem } = this.props;
     let url = check;
     if (item.isComplete) {
       url = checkDone;
@@ -30,6 +28,7 @@ class TodoItems extends Component {
         >
           {item.title}
         </p>
+        <img className="delete-btn" src={deleteIcon} alt="Delete" onClick={deleteItem}/>
       </div>
     );
   }

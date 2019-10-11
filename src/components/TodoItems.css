@@ -1,18 +1,38 @@
 .todoItems{
     color: #4b4b4b;
     font-size: 20px;
-    height: 30px;
     user-select: none;
-    margin: 10px auto;
+    margin: 10px 5px;
     display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+.todoItems:last-child{
+    border:none;
 }
 
 .todoItems > p{
     margin: 0;
     margin-left: 15px;
+    text-align: left;
+    width: 422px;
+    height: 32px;
 }
 
 .complete{
     text-decoration: line-through;
     opacity: .3;
+}
+
+.todoItems .delete-btn{
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    width: 32px;
+    height: 32px;
+}
+
+.todoItems .delete-btn:hover{
+    opacity: 1;
 }
