@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -19,4 +21,19 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.input--todo{
+  display: flex;
+  margin: 10px 0;
+}
+
+.input--todo input{
+  height: 32px;
+  padding-left: 15px;
+  font-size: 24px;
+  width: 100%;
+  color: #4b4b4b;
+  outline: none;
+  border: none;
 }
